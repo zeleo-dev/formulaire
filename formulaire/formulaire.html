@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="formulaire.css" />
+  </head>
+  <body>
+    <form action="">
+      <!--champ de texte libre-->
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="Name" id="name" required />
+      </div>
+      <div>
+        <label for="firstname">Firstname</label>
+        <input type="text" name="Firstname" id="firstname" required />
+      </div>
+      <div>
+        <label for="tel">Phone number</label>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          pattern="[0-9]+"
+        /><!--pattern sert à valider une chaine de caractère selon ce que l'on veut-->
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div>
+        <label for="cv">Téléchargez votre CV</label>
+        <input type="file" name="cv" id="cv" required />
+      </div>
+      <label for="naissance">Date de naissance : </label>
+      <input type="date" name="naissance" id="naissance" />
+      <div>
+        <div>
+          <label for="couleur">Couleur des yeux : </label>
+          <input type="color" name="color" id="color" />
+        </div>
+        <input type="radio" name="cgv" id="radio" /><label for="">
+          Acceptez-vous les conditions générales de ventes</label
+        >
+      </div>
+      <div>
+        <label for="">Quels sont vos types de musiques : </label>
+      </div>
+      <div>
+        <label class="music" for="rock">Rock: </label>
+        <input type="checkbox" name="" id="rock" />
+        <label class="music" for="hardrock">Hard-rock: </label>
+        <input type="checkbox" name="" id="hardrock" />
+        <label class="music" for="metal">Metal:</label>
+        <input type="checkbox" name="" id="metal" />
+        <label class="music" for="heavymetal">Heavy-metal: </label>
+        <input type="checkbox" name="" id="heavymetal" />
+      </div>
+      <div>
+        <label for="">Combien avez-vous de gélules aujourd'hui?</label>
+        <select name="nbGelule" id="nbGelule">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div>
+        <label for="">Quels sont vos effets secondaires</label>
+        <textarea name="effet" id="effet"> </textarea>
+      </div>
+      <input class="btn" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

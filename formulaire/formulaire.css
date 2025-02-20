@@ -1,0 +1,44 @@
+/*en premier on restreint la largeur du block et on va le centrer
+*/
+form{
+    max-width: 600px;
+    background-color:rgb(228, 187, 157);
+    margin: auto;
+    padding: 20px;
+}
+/*mise en forme des label pour qu'ils soient alignés et pas collés 
+on fait un display car le min width ne fonctionne pas sinon*/
+label{
+    display: inline-block;
+    min-width: 100px;
+    font-weight: bold;
+}
+form div{
+    margin-bottom: 20px;
+}
+textarea{
+    display: block;
+    width: 100%;
+    min-height: 150px;
+    resize: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+.btn{
+    border-color: darkmagenta;
+    border-radius: 20px 5px 20px 5px;
+    background-color: darkorchid;
+    box-shadow: 0px 10px 10px 0px;
+    color: rgb(13, 13, 14);
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(13, 13, 14) ;
+    color: darkorchid;
+}
+.music{
+    min-width: 0;
+   
+}
