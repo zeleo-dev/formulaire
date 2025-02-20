@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulaire exercice</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <form action="">
+      <h1>Inscrivez vous au Ultimate Gaming Contest!</h1>
+      <h2>Participez et tentez de remporter des récompenses incroyables</h2>
+      <div>
+        <label class="user"  for="name">Nom complet</label>
+        <input class="write" type="text" name="nomComplet" id="name" placeholder="nom complet" required/>
+      </div>
+      <div>
+        <label  class="user" for="email">Adresse email</label>
+        <input class="write" type="email" name="email" id="email" placeholder="tartanpion@gmail.com" required />
+      </div>
+      <div>
+        <label class="user"  for="pseudo">Pseudo</label>
+        <input class="write" type="text" name="pseudo" id="pseudo" placeholder="pseudo" required/>
+      </div>
+      <div>
+        <label class="user"  for="tel">Numéro de téléphone</label>
+        <input class="write" type="tel" name="tel" id="tel" pattern="[0-9]{10}" placeholder="0610203050" />
+      </div>
+      <div>
+        <label  class="user" for="naissance">Date de naissance</label>
+        <input class="write" type="date" name="naissance" id="naissance" required/>
+
+      <div class="prefer">
+        
+        <label for="jeu">Jeu préféré</label> 
+      </div>
+        <div>
+        <select name="jeu" id="jeu">
+          <option value="wow">World of Warcraft</option>
+          <option value="lol">League of Legend</option>
+          <option value="fifa">FIFA</option>
+          <option value="us">Among us</option>
+        </select>
+        </div>
+     
+
+      <h2>Plateforme</h2>
+      <div>
+        <!--Pour que les boutons radio soient liés, il faut mettre le même name-->
+        <div>   
+            <input class="patform" type="radio" name="radio" id="pc" /> 
+            <label class=" plateforme" for="pc">PC</label>
+
+        </div>
+        <div>
+            <input class="patform" type="radio" name="radio" id="console" />
+            <label class=" plateforme" for="console">Console</label>
+
+        </div>
+        <div>
+            <input class="patform" type="radio" name="radio" id="mobile" />
+            <label class=" plateforme" for="mobile">Mobile</label>
+
+        </div>
+      </div>
+      <div class="sgv">
+        <input  type="checkbox" name="cgv" id="cgv" />
+        <label for="cgv"> J'accepte les <span> conditions générales</span></label>
+      </div>
+      <div>
+        <input class="btn" type="submit" value="submit" />
+      </div>
+    </form>
+  </body>
+</html>
